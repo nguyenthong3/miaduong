@@ -28,7 +28,7 @@ def allowed_file(filename):
     else:
         return False
 
-
+@app.route("/")
 @app.route("/homepage")
 def ToHomePage():
     return render_template("index.html")
