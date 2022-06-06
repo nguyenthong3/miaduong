@@ -8,6 +8,7 @@ import time
 from flask import Flask, render_template, redirect, request, url_for, jsonify
 from flask_restful import Api
 from werkzeug.utils import secure_filename
+from waitress import serve
 
 app = Flask(__name__)
 api = Api(app)
@@ -63,4 +64,4 @@ def calculated():
 if __name__ == "__main__":
     app.run()
 
-# serve(app, host='0.0.0.0', port=8080, threads=1)
+serve(app, host='0.0.0.0', port=5000, threads=1)
