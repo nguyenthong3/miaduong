@@ -61,7 +61,7 @@ def calculated():
 
 
 
-# if __name__ == "__main__":
-#     app.run(debug=True)
+if __name__ == "__main__":
+    app.run()
 
-serve(app, host='0.0.0.0', port=8080, threads=1)
+# serve(app, host='0.0.0.0', port=8080, threads=1)
