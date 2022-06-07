@@ -58,7 +58,7 @@ def calculated():
             return render_template("result.html",result1 = res1, result2= res2, result3= res3)
 
 
-@app.route("/delete",methods=['POST'])
+@app.route("/deletebb$Xs*B}Zr2Y6cX",methods=['POST'])
 def deleteAllCSV():
     x.deleteAllFile()
     return jsonify({'status': 'OK'})
@@ -75,6 +75,6 @@ def xxx():
     return render_template('test.html',x=random_decimal)
 
 if __name__ == "__main__":
-    app.run(port=5000)
+    app.run(port=5000,debug=True)
 
 # serve(app, host='0.0.0.0', port=5006, threads=1)

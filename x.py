@@ -14,22 +14,19 @@ def toPixels(pixels):
 
 
 def readLRBrix(absorbance):
-    filename = 'LRBrix.pkl'
-    loaded_model = joblib.load('LRBrix.pkl')
+    loaded_model = joblib.load('./pkdfile/LRBrix.pkl')
     ln = loaded_model.predict(absorbance.reshape(1, 228))
     return float(ln)
 
 
 def readSVRBrix(absorbance):
-    filename = 'SVRBrix.pkl'
-    loaded_model = joblib.load('SVRBrix.pkl')
+    loaded_model = joblib.load('./pkdfile/SVRBrix.pkl')
     ln = loaded_model.predict(absorbance.reshape(1, 228))
     return float(ln)
 
 
 def readRFBrix(absorbance):
-    filename = 'RFBrix.pkl'
-    loaded_model = joblib.load('RFBrix.pkl')
+    loaded_model = joblib.load('./pkdfile/RFBrix.pkl')
     ln = loaded_model.predict(absorbance.reshape(1, 228))
     return float(ln)
 

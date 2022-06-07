@@ -13,7 +13,7 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-
+    <link rel="icon" type="image/x-icon" href="/static/img/favicon.ico">
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,46 +35,22 @@
 </head>
 
 <body>
+    <div id="music">
+        <a class="am-nhac btn" id="am-nhac" style="background: rgba(3, 82, 7, 0.7);">
+            <img id="on-music" style="display: inline-block;" src="/static/img/music.gif">
+            <img id="off-music" style="display: none;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAABXklEQVRIie3UvUucQRDH8Y8vhyi+xIBC0vqCWNgkacRCCxutjIWVlf+If4LYKMKhYqWFIkkQq5NUgp2Fgp6SNCEWEhAxBJWz2BWO8y53x2Ml/mB42GV2vjsz+wyvKqO6KnwHsY0hvMUV/pQ7VFMFIIMWLGAYI8hhL1oG51XEe6LHQPnqxgzW8BufCw/VJiEiizSmsYiBJIALfBRuOyPcvqzqqwAcC2U4FHowK/QwI5TuHX4lARBeTToadEXYMHqxnBRQqLNo6VIOSZtcVi8X0I4l4VVcYgVNzwWoxw7+4gP6cCP8TI+zqxNzSMV1Kq47K4GO43vBXg1+YD0v4Ca+oRlb+IqGSjLox37BXg5HeetbTMVvNgaexL9KAFl8KpJBK1aL7Of8ZyoXA3zBG2Esd+A95qPvbvRJYUPoSY/Qr00VlugOo2jECQ5iwDHcR592/MQEroVynaKtVCavKqkHOX9CJ2hIHHIAAAAASUVORK5CYII="
+            /> Music
+        </a>
+    </div>
     <!-- Spinner Start -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-grow text-primary" role="status"></div>
     </div>
     <!-- Spinner End -->
 
-
-    <!-- Topbar Start -->
-    <!-- <div class="container-fluid bg-dark text-light p-0">
-        <div class="row gx-0 d-none d-lg-flex" style="background: rgba(59, 237, 15, 0.5);">
-            <div class="col-lg-7 px-5 text-start">
-                <div class="h-100 d-inline-flex align-items-center me-4">
-                    <small class="fa fa-map-marker-alt text-primary me-2"></small>
-                    <small>94 Ngõ Tự Do, Đồng Tâm, HBT, Hà Nội, Việt Nam</small>
-                </div>
-                <div class="h-100 d-inline-flex align-items-center">
-                    <small class="far fa-clock text-primary me-2"></small>
-                    <small>Mon - Fri : 00.00 AM - 23.59 PM</small>
-                </div>
-            </div>
-            <div class="col-lg-5 px-5 text-end">
-                <div class="h-100 d-inline-flex align-items-center me-4">
-                    <small class="fa fa-phone-alt text-primary me-2"></small>
-                    <small>+085 556 8587</small>
-                </div>
-                <div class="h-100 d-inline-flex align-items-center mx-n2">
-                    <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href="https://www.facebook.com/thong.nguyenduy188"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-square btn-link rounded-0" href="https://www.instagram.com/thongnguyenduy/"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Topbar End -->
-
-
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
-        <a href="https://python-miaduong.herokuapp.com/" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
+        <a href="/" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
             <h2 class="m-0"><i class="fa-solid fa-cannabis"></i> JohnCena</h2>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -82,7 +58,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div id="my-menu" class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="https://python-miaduong.herokuapp.com/" class="nav-item nav-link active">Trang chủ</a>
+                <a href="/" class="nav-item nav-link active">Trang chủ</a>
                 <a href="#about-us" class="nav-item nav-link">Về chúng tôi</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Các mô hình</a>
@@ -211,10 +187,10 @@
 
     <!-- Div Calculated Start -->
     <main class="container">
-        <iframe src="" type="audio/mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+        <!-- <iframe src="/static/thong1.mp3" type="audio/mp3" allow="" id="audio" style="display:none"></iframe>
         <audio id="audioID" loop>
-            <source src="" type="audio/mp3">
-        </audio>
+            <source src="/static/thong1.mp3" type="audio/mp3">
+        </audio> -->
         <div style="margin-left: 35%;">
             <h1>Upload data here</h1>
             <p id="msg"></p>
@@ -242,7 +218,54 @@
                         <span></span>
                         <span></span><i class="fa-solid fa-calculator"></i> Predict
                     </button>
-                    <a href="" class="btn btn-primary">Hướng dẫn upload</a>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Hướng dẫn upload</button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Hướng dẫn upload file để tiến hành dự đoán</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>127.0.0.1 - - [07/Jun/2022 17:17:20] "GET /static/img/minh.jpg HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:17:20] "GET /static/img/huybeo.jpg HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:17:21] "GET /static/img/favicon.ico
+                                        HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:18:22] "GET /homepage HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:18:22] "GET /static/lib/animate/animate.min.css HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:18:22]
+                                        "GET /static/css/bootstrap.min.css HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:18:22] "GET /static/lib/owlcarousel/assets/owl.carousel.min.css HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:18:22] "GET /static/application.css
+                                        HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:18:22] "GET /static/css/style.css HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:18:22] "GET /static/lib/wow/wow.min.js HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:18:22]
+                                        "GET /static/lib/easing/easing.min.js HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:18:22] "GET /static/lib/waypoints/waypoints.min.js HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:18:22] "GET /static/lib/owlcarousel/owl.carousel.min.js
+                                        HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:18:22] "GET /static/js/main.js HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:18:22] "GET /static/img/music.gif HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:18:22] "GET
+                                        /static/img/word-image-1.png HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:18:22] "GET /static/img/carousel-mia.jpg HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:18:22] "GET /static/img/carousel-hust3.jpg HTTP/1.1"
+                                        200 - 127.0.0.1 - - [07/Jun/2022 17:18:22] "GET /static/img/thong2.jpg HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:18:22] "GET /static/img/minh.jpg HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:18:22] "GET /static/img/huybeo.jpg
+                                        HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:18:23] "GET /static/img/favicon.ico HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:18:46] "GET /homepage HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:18:46] "GET /static/lib/animate/animate.min.css
+                                        HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:18:46] "GET /static/lib/owlcarousel/assets/owl.carousel.min.css HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:18:46] "GET /static/css/style.css HTTP/1.1" 200 - 127.0.0.1
+                                        - - [07/Jun/2022 17:18:46] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:18:46] "GET /static/application.css HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:18:46] "GET /static/lib/wow/wow.min.js
+                                        HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:18:46] "GET /static/lib/easing/easing.min.js HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:18:46] "GET /static/lib/waypoints/waypoints.min.js HTTP/1.1" 200 - 127.0.0.1
+                                        - - [07/Jun/2022 17:18:46] "GET /static/lib/owlcarousel/owl.carousel.min.js HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:18:46] "GET /static/js/main.js HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:18:46] "GET
+                                        /static/img/music.gif HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:18:46] "GET /static/img/word-image-1.png HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:18:46] "GET /static/img/carousel-mia.jpg HTTP/1.1" 200 -
+                                        127.0.0.1 - - [07/Jun/2022 17:18:46] "GET /static/img/carousel-hust3.jpg HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:18:46] "GET /static/img/thong2.jpg HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:18:46] "GET
+                                        /static/img/minh.jpg HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:18:46] "GET /static/img/huybeo.jpg HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:20:45] "GET /homepage HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022
+                                        17:20:45] "GET /static/lib/animate/animate.min.css HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:20:45] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:20:45] "GET /static/css/style.css
+                                        HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:20:45] "GET /static/application.css HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:20:45] "GET /static/lib/owlcarousel/assets/owl.carousel.min.css HTTP/1.1" 200 - 127.0.0.1
+                                        - - [07/Jun/2022 17:20:45] "GET /static/lib/wow/wow.min.js HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:20:45] "GET /static/lib/easing/easing.min.js HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:20:45] "GET /static/lib/waypoints/waypoints.min.js
+                                        HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:20:45] "GET /static/lib/owlcarousel/owl.carousel.min.js HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:20:45] "GET /static/js/main.js HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022
+                                        17:20:45] "GET /static/img/music.gif HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:20:45] "GET /static/img/word-image-1.png HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:20:45] "GET /static/img/carousel-mia.jpg
+                                        HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:20:45] "GET /static/img/carousel-hust3.jpg HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:20:45] "GET /static/img/thong2.jpg HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022
+                                        17:20:45] "GET /static/img/huybeo.jpg HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:20:45] "GET /static/img/minh.jpg HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:20:46] "GET /static/img/favicon.ico HTTP/1.1" 200
+                                        - 127.0.0.1 - - [07/Jun/2022 17:21:08] "GET /homepage HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:21:08] "GET /static/lib/animate/animate.min.css HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:21:08] "GET /static/lib/owlcarousel/assets/owl.carousel.min.css
+                                        HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:21:08] "GET /static/css/style.css HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:21:08] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022
+                                        17:21:08] "GET /static/application.css HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:21:08] "GET /static/lib/wow/wow.min.js HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:21:08] "GET /static/lib/easing/easing.min.js
+                                        HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:21:08] "GET /static/lib/waypoints/waypoints.min.js HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:21:08] "GET /static/lib/owlcarousel/owl.carousel.min.js HTTP/1.1" 200
+                                        - 127.0.0.1 - - [07/Jun/2022 17:21:08] "GET /static/js/main.js HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:21:08] "GET /static/img/music.gif HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:21:08] "GET /static/img/word-image-1.png
+                                        HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:21:08] "GET /static/img/carousel-mia.jpg HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:21:08] "GET /static/img/carousel-hust3.jpg HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022
+                                        17:21:08] "GET /static/img/thong2.jpg HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:21:08] "GET /static/img/minh.jpg HTTP/1.1" 200 - 127.0.0.1 - - [07/Jun/2022 17:21:08] "GET /static/img/huybeo.jpg HTTP/1.1" 200
+                                        - 127.0.0.1 - - [07/Jun/2022 17:21:09] "GET /static/img/favicon.ico HTTP/1.1" 200 -</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <a href="" class="btn btn-primary" data-toggle="modal" data-target="#gridSystemModal">Hướng dẫn upload</a> -->
                 </form>
             </div>
         </div>
@@ -307,12 +330,11 @@
     </main>
     <!-- Div Calculated End -->
 
-
     <div class="res" style="display: none;">
     </div>
 
     <!-- Team Start -->
-    <div id="about-us" class="container-xxl py-6">
+    <div id="about-us" class="container-xxl py-6" style="padding-bottom: 0px;">
         <div class="container">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <h6 class="text-primary text-uppercase mb-2">Đội của chúng tôi</h6>
@@ -367,82 +389,89 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item position-relative">
-                        <div class="position-relative">
-                            <img class="img-fluid" src="/static/img/team-4.jpg" alt="">
-                            <div class="team-social text-center">
-                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light text-center p-4">
-                            <h5 class="mt-2">Full Name</h5>
-                            <span>Trainer</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item position-relative">
-                        <div class="position-relative">
-                            <img class="img-fluid" src="/static/img/team-4.jpg" alt="">
-                            <div class="team-social text-center">
-                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light text-center p-4">
-                            <h5 class="mt-2">Full Name</h5>
-                            <span>Trainer</span>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </div>
     </div>
+    <div id="about-us" class="container-xxl py-6">
+        <div class="container">
+            <div class="row g-0 team-items" style="justify-content: space-evenly;">
+                <div class="col-lg-3 col-md-6 wow fadeInUp " data-wow-delay="0.1s ">
+                    <div class="team-item position-relative ">
+                        <div class="position-relative ">
+                            <img style="height: 310px; " class="img-fluid " src="/static/img/thong2.jpg " alt="Nguyen Dinh Duy Thong ">
+                            <div class="team-social text-center ">
+                                <a class="btn btn-square btn-outline-primary border-2 m-1 " href="https://www.facebook.com/ "><i class="fab fa-facebook-f "></i></a>
+                                <a class="btn btn-square btn-outline-primary border-2 m-1 " href="https://twitter.com/?lang=vi "><i class="fab fa-twitter "></i></a>
+                                <a class="btn btn-square btn-outline-primary border-2 m-1 " href="https://www.instagram.com/ "><i class="fab fa-instagram "></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light text-center p-4 ">
+                            <h5 class="mt-2 ">Thong NDD</h5>
+                            <span>FullStackOverflow Developer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp " data-wow-delay="0.3s ">
+                    <div class="team-item position-relative ">
+                        <div class="position-relative ">
+                            <img style="height: 310px; " class="img-fluid " src="/static/img/minh.jpg " alt=" ">
+                            <div class="team-social text-center ">
+                                <a class="btn btn-square btn-outline-primary border-2 m-1 " href="https://www.facebook.com/ "><i class="fab fa-facebook-f "></i></a>
+                                <a class="btn btn-square btn-outline-primary border-2 m-1 " href="https://twitter.com/?lang=vi "><i class="fab fa-twitter "></i></a>
+                                <a class="btn btn-square btn-outline-primary border-2 m-1 " href="https://www.instagram.com/ "><i class="fab fa-instagram "></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light text-center p-4 ">
+                            <h5 class="mt-2 ">Minh LPN</h5>
+                            <span>ML Algorithm Research</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Team End -->
 
     <!-- Footer Start -->
-    <div id="contact-me" style="background: rgba(56, 124, 39, 0.8);" class="container-fluid text-light footer my-6 mb-0 py-6 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container">
-            <div class="row g-5" style="justify-content: space-around;">
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-4">Solomon Nguyen DDuy</h4>
-                    <h2 class="text-primary mb-4"><i class="fa-solid fa-cannabis"></i> JohnCena</h2>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>94 Ngõ Tự Do, Đồng Tâm, HBT, Hà Nội, Việt Nam</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+085 556 8587</p>
-                    <p style="font-size: 14px;" class="mb-2"><i class="fa fa-envelope me-3"></i>thong.nguyenduy188@facebook.com</p>
+    <div id="contact-me " style="background: rgba(56, 124, 39, 0.8); " class="container-fluid text-light footer my-6 mb-0 py-6 wow fadeIn " data-wow-delay="0.1s ">
+        <div class="container ">
+            <div class="row g-5 " style="justify-content: space-around; ">
+                <div class="col-lg-3 col-md-6 ">
+                    <h4 class="text-white mb-4 ">Solomon Nguyen DDuy</h4>
+                    <h2 class="text-primary mb-4 "><i class="fa-solid fa-cannabis "></i> JohnCena</h2>
+                    <p class="mb-2 "><i class="fa fa-map-marker-alt me-3 "></i>94 Ngõ Tự Do, Đồng Tâm, HBT, Hà Nội, Việt Nam</p>
+                    <p class="mb-2 "><i class="fa fa-phone-alt me-3 "></i>+085 556 8587</p>
+                    <p style="font-size: 14px; " class="mb-2 "><i class="fa fa-envelope me-3 "></i>thong.nguyenduy188@facebook.com</p>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Liên kết nhanh</h4>
-                    <a class="btn btn-link" href="#about-us">Về chúng tôi</a>
-                    <a class="btn btn-link" href="">Liên hệ</a>
-                    <a class="btn btn-link" href="">Các mô hình</a>
+                <div class="col-lg-3 col-md-6 ">
+                    <h4 class="text-light mb-4 ">Liên kết nhanh</h4>
+                    <a class="btn btn-link " href="#about-us ">Về chúng tôi</a>
+                    <a class="btn btn-link " href=" ">Liên hệ</a>
+                    <a class="btn btn-link " href=" ">Các mô hình</a>
                 </div>
-                <!-- <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Popular Links</h4>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
+                <!-- <div class="col-lg-3 col-md-6 ">
+                    <h4 class="text-light mb-4 ">Popular Links</h4>
+                    <a class="btn btn-link " href=" ">About Us</a>
+                    <a class="btn btn-link " href=" ">Contact Us</a>
+                    <a class="btn btn-link " href=" ">Our Services</a>
+                    <a class="btn btn-link " href=" ">Terms & Condition</a>
+                    <a class="btn btn-link " href=" ">Support</a>
                 </div> -->
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Đăng kí nhận tin mới</h4>
-                    <form action="">
-                        <div class="input-group">
-                            <input type="text" class="form-control p-3 border-0" placeholder="Your Email Address">
-                            <button class="btn btn-primary">Đăng kí</button>
+                <div class="col-lg-3 col-md-6 ">
+                    <h4 class="text-light mb-4 ">Đăng kí nhận tin mới</h4>
+                    <form action=" ">
+                        <div class="input-group ">
+                            <input type="text " class="form-control p-3 border-0 " placeholder="Your Email Address ">
+                            <button class="btn btn-primary ">Đăng kí</button>
                         </div>
                     </form>
-                    <h6 class="text-white mt-4 mb-3">Theo dõi tôi tại:</h6>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-outline-light me-1" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-outline-light me-1" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-outline-light me-1" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-outline-light me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <h6 class="text-white mt-4 mb-3 ">Theo dõi tôi tại:</h6>
+                    <div class="d-flex pt-2 ">
+                        <a class="btn btn-square btn-outline-light me-1 " href=" "><i class="fab fa-twitter "></i></a>
+                        <a class="btn btn-square btn-outline-light me-1 " href=" "><i class="fab fa-facebook-f "></i></a>
+                        <a class="btn btn-square btn-outline-light me-1 " href=" "><i class="fab fa-youtube "></i></a>
+                        <a class="btn btn-square btn-outline-light me-0 " href=" "><i class="fab fa-linkedin-in "></i></a>
                     </div>
                 </div>
             </div>
@@ -452,15 +481,16 @@
 
 
     <!-- Copyright Start -->
-    <div style="background: rgba(0, 0, 0, 0.7);" class="container-fluid copyright text-light py-4 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a href="#">SugarCane Website</a>
+    <div style="background: rgba(0, 0, 0, 0.7); " class="container-fluid copyright text-light py-4 wow fadeIn " data-wow-delay="0.1s ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0 ">
+                    &copy; <a href="# ">SugarCane Website</a>
                 </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    Designed By <a href="https://www.facebook.com/thong,nguyenduy188">TNDD</a>
+                <div class="col-md-6 text-center text-md-end
+                ">
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal ". Thank you for your support. ***/-->
+                    Designed By <a href="https://www.facebook.com/thong,nguyenduy188 ">TNDD</a>
                 </div>
             </div>
         </div>
@@ -469,31 +499,64 @@
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <a href="# " class="btn btn-lg btn-primary btn-lg-square back-to-top "><i class="bi bi-arrow-up "></i></a>
+
+    <!-- Scrollable modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch demo modal
+      </button>
 
 
     <!-- JavaScript Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/344cfec728.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="/static/lib/wow/wow.min.js"></script>
-    <script src="/static/lib/easing/easing.min.js"></script>
-    <script src="/static/lib/waypoints/waypoints.min.js"></script>
-    <script src="/static/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous "></script>
+    <script src="https://kit.fontawesome.com/344cfec728.js " crossorigin="anonymous "></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js " integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin=" anonymous "></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js "></script>
+    <script src="/static/lib/wow/wow.min.js "></script>
+    <script src="/static/lib/easing/easing.min.js "></script>
+    <script src="/static/lib/waypoints/waypoints.min.js "></script>
+    <script src="/static/lib/owlcarousel/owl.carousel.min.js "></script>
 
     <!-- Template Javascript -->
-    <script src="/static/js/main.js"></script>
+    <script src="/static/js/main.js "></script>
     <script>
+        var music = document.getElementById('am-nhac');
+        music.addEventListener('click', function() {
+            var x = document.getElementById('off-music').style.display;
+            if (x == 'none') {
+                document.getElementById("on-music").style.display = 'none';
+                document.getElementById("off-music").style.display = 'inline-block';
+                $('#audio').attr('src', '');
+
+            } else {
+                document.getElementById("on-music").style.display = 'inline-block';
+                document.getElementById("off-music").style.display = 'none';
+                $('#audio').attr('src', './static/thong1.mp3');
+            }
+        }, false);
+
+        const myModal = document.getElementById('myModal')
+        const myInput = document.getElementById('myInput')
+
+        myModal.addEventListener('shown.bs.modal', () => {
+            myInput.focus()
+        })
+
+        // $(document).ready(function() {
+        //     var a = document.getElementById("off-music").style.display;
+        //     alert(a);
+        // });
+
+
         // $('#upload').on('click', function() {
         //     var for_data = new FormData()
         //     var ins = document.getElementById('fileInput').files.length;
         //     if (ins == 0) {
-        //         $('#msg').html('<span style="color:red">Select at least one file</span>');
+        //         $('#msg').html('<span style="color:red ">Select at least one file</span>');
         //         return;
         //     }
         //     for (var x = 0; x < ins; x++) {
-        //         form_data.append("csv[]", document.getElementById('fileInput').files[x]);
+        //         form_data.append("csv[] ", document.getElementById('fileInput').files[x]);
         //     }
 
         //     $.ajax({
@@ -518,22 +581,22 @@
         // })
 
         // function ren() {
-        //     // var x = document.getElementById("fileInput");
+        //     // var x = document.getElementById("fileInput ");
         //     // consol    e.log(x)
         //     $.ajax({
         //             data: {
         //                 file: $('#fileInput').val()
         //             },
-        //             url: "/do",
-        //             type: "POST"
+        //             url: "/do ",
+        //             type: "POST "
         //         })
         //         .done(function(data) {
         //             if (data.error) {
         //                 $('#errorAlert').text(data.error).show();
-        //                 console.log("sai");
+        //                 console.log("sai ");
         //             } else {
-        //                 document.getElementById("rand").style.display = "block";
-        //                 console.log("ok");
+        //                 document.getElementById("rand ").style.display = "block ";
+        //                 console.log("ok ");
         //             }
         //         });
         // }
@@ -544,8 +607,8 @@
         //                 data: {
         //                     file: $('#fileInput').val()
         //                 },
-        //                 url: "/do",
-        //                 type: "POST"
+        //                 url: "/do ",
+        //                 type: "POST "
         //             })
         //             .done(function(data) {
         //                 if (data.error) {
