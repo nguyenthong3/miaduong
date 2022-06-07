@@ -177,9 +177,6 @@ button:hover span:nth-child(4) {
     background: rgba(38, 136, 13, 0.7);
 }
 
-
-/* aa */
-
 #header-carousel a:nth-child(even):hover {
     background-color: rgba(65, 202, 31, 0.7);
 }
