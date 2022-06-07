@@ -1,0 +1,181 @@
+@charset "UTF-8";
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* body {
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+} */
+
+main {
+    margin-top: 1%;
+    background: rgba(233, 233, 233, 0.6);
+    border: 5px solid;
+    border-radius: 15px;
+    padding: 2%;
+    margin-left: 1%;
+}
+
+#bat-dau {
+    background: rgba(38, 136, 13, 0.7);
+    font-size: 22px;
+}
+
+#bat-dau:hover {
+    background: rgba(59, 227, 17, 0.7);
+}
+
+
+/* Am nhac */
+
+#am-nhac {
+    margin-top: 2%;
+    text-decoration: none;
+    width: 90px;
+    height: 50px;
+    margin-left: 15%;
+    font-size: 30px;
+    border: 1px solid;
+    border-radius: 15px;
+    background: #0a3e68;
+    padding: 10px;
+    color: orange;
+}
+
+#am-nhac:hover {
+    color: white;
+}
+
+
+/* end am nhac */
+
+
+/* Nút Predict */
+
+.test {
+    margin-top: 3%;
+    color: black;
+    font-weight: 700;
+    background: rgba(255, 255, 255, 0.7);
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+    border: 1px solid #0ac34b;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.test:hover {
+    color: white;
+    background: rgba(23, 207, 93, 0.902);
+    transition-delay: 0.7s;
+}
+
+button span {
+    position: absolute;
+    display: block;
+}
+
+button span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #0a3e68);
+}
+
+button:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+
+button span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #0a3e68);
+}
+
+button:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.3s;
+}
+
+button span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #0a3e68);
+}
+
+button:hover span:nth-child(2) {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.1s;
+}
+
+button span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #0a3e68);
+}
+
+button:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+#upload .btn {
+    color: white;
+    margin-top: -0.2%;
+    margin-left: 1.2%;
+    font-size: 15px;
+    font-weight: 600;
+    border: 1px solid rgba(23, 207, 93, 0.902);
+    border-radius: 12px;
+    padding: 15px 30px;
+    background: rgba(23, 207, 93, 0.902);
+}
+
+#upload .btn:hover {
+    z-index: 22;
+    color: white;
+    background: rgba(10, 255, 104, 0.902);
+    ;
+    border: 1px solid rgba(0, 0, 0, 0.602);
+    padding: 17px 32px;
+}
+
+
+/* Kết Thúc Nút Predict */
+
+#about-us span {
+    font-weight: 600;
+}
+
+#header-carousel a:nth-child(even) {
+    background: rgba(38, 136, 13, 0.7);
+}
+
+
+/* aa */
+
+#header-carousel a:nth-child(even):hover {
+    background-color: rgba(65, 202, 31, 0.7);
+}
