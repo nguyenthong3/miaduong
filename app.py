@@ -8,7 +8,6 @@ import time
 from flask import Flask, render_template, redirect, request, url_for, jsonify
 from flask_restful import Api
 from werkzeug.utils import secure_filename
-# from waitress import serve
 
 app = Flask(__name__)
 api = Api(app)
