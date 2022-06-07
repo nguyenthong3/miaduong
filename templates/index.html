@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Lombok</title>
+    <title>Solomon's Project</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -43,7 +43,7 @@
 
 
     <!-- Topbar Start -->
-    <div class="container-fluid bg-dark text-light p-0">
+    <!-- <div class="container-fluid bg-dark text-light p-0">
         <div class="row gx-0 d-none d-lg-flex" style="background: rgba(59, 237, 15, 0.5);">
             <div class="col-lg-7 px-5 text-start">
                 <div class="h-100 d-inline-flex align-items-center me-4">
@@ -68,7 +68,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Topbar End -->
 
 
@@ -81,23 +81,22 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
+            <div id="my-menu" class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="https://python-miaduong.herokuapp.com/" class="nav-item nav-link active">Trang chủ</a>
-                <a href="about.html" class="nav-item nav-link">Về chúng tôi</a>
-                <a href="courses.html" class="nav-item nav-link">Các mô hình</a>
+                <a href="#about-us" class="nav-item nav-link">Về chúng tôi</a>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Khác</a>
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Các mô hình</a>
                     <div class="dropdown-menu bg-light m-0">
-                        <a href="feature.html" class="dropdown-item">Features</a>
-                        <a href="appointment.html" class="dropdown-item">Appointment</a>
-                        <a href="team.html" class="dropdown-item">Our Team</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        <a href="404.html" class="dropdown-item">404 Page</a>
+                        <a href="" class="dropdown-item">Hồi quy tuyến tính (LR)</a>
+                        <a href="" class="dropdown-item">Support Vector Regression (SVR)</a>
+                        <a href="" class="dropdown-item">Rừng ngẫu nhiên (RF)</a>
+                        <a href="" class="dropdown-item">Mạng Nơ-ron học sâu (DL)</a>
                     </div>
                 </div>
-                <a href="contact.html" class="nav-item nav-link">Liên hệ</a>
+                <a href="" class="nav-item nav-link">Khác</a>
+                <a href="#contact-me" class="nav-item nav-link">Liên hệ</a>
             </div>
-            <a style="background: rgba(38, 136, 13, 0.7);" href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Bắt đầu<i class="fa fa-arrow-right ms-3"></i></a>
+            <a id="bat-dau" href="#to-calculated" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Bắt đầu<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>
     <!-- Navbar End -->
@@ -114,8 +113,8 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-7">
                                     <h1 class="display-2 text-light mb-5 animated slideInDown">Machine Learning: Công cụ của thời đại</h1>
-                                    <a style="background: rgba(38, 136, 13, 0.7);" href="" class="btn btn-primary py-sm-3 px-sm-5">Learn More</a>
-                                    <a href="" class="btn btn-light py-sm-3 px-sm-5 ms-3">Our Courses</a>
+                                    <a href="" class="btn btn-primary py-sm-3 px-sm-5">Tìm hiểu thêm</a>
+                                    <a href="" class="btn btn-light py-sm-3 px-sm-5 ms-3">Các mô hình</a>
                                 </div>
                             </div>
                         </div>
@@ -128,8 +127,8 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-7">
                                     <h1 class="display-2 text-light mb-5 animated slideInDown">Mía Đường rất đẹp bạn đã biết chưa ?</h1>
-                                    <a href="" class="btn btn-primary py-sm-3 px-sm-5">Learn More</a>
-                                    <a href="" class="btn btn-light py-sm-3 px-sm-5 ms-3">Our Courses</a>
+                                    <a href="" class="btn btn-primary py-sm-3 px-sm-5">Tìm hiểu thêm</a>
+                                    <a href="" class="btn btn-light py-sm-3 px-sm-5 ms-3">Text text</a>
                                 </div>
                             </div>
                         </div>
@@ -142,8 +141,8 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-7">
                                     <h2 class="display-2 text-light mb-5 animated slideInDown">Nhóm sinh viên Đại học Bách Khoa Hà Nội</h2>
-                                    <a href="" class="btn btn-primary py-sm-3 px-sm-5">Learn More</a>
-                                    <a href="" class="btn btn-light py-sm-3 px-sm-5 ms-3">Our Courses</a>
+                                    <a href="" class="btn btn-primary py-sm-3 px-sm-5">Tìm hiểu thêm</a>
+                                    <a href="" class="btn btn-light py-sm-3 px-sm-5 ms-3">Text text</a>
                                 </div>
                             </div>
                         </div>
@@ -163,17 +162,17 @@
     <!-- Carousel End -->
 
     <!-- Facts Start -->
-    <div class="container-fluid facts py-5 pt-lg-0">
+    <div id="to-calculated" class="container-fluid facts py-5 pt-lg-0">
         <div class="container py-5 pt-lg-0">
             <div class="row gx-0">
                 <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
                     <div class="bg-white shadow d-flex align-items-center h-100 p-4" style="min-height: 150px;">
                         <div class="d-flex">
                             <div class="flex-shrink-0 btn-lg-square bg-primary">
-                                <i class="fa fa-car text-white"></i>
+                                <i class="fa-solid fa-cannabis"></i>
                             </div>
                             <div class="ps-4">
-                                <h5>Easy Driving Learn </h5>
+                                <h5>Lorem Ipsum Ipsum</h5>
                                 <span>Clita erat ipsum lorem sit sed stet duo justo erat amet</span>
                             </div>
                         </div>
@@ -183,10 +182,10 @@
                     <div class="bg-white shadow d-flex align-items-center h-100 p-4" style="min-height: 150px;">
                         <div class="d-flex">
                             <div class="flex-shrink-0 btn-lg-square bg-primary">
-                                <i class="fa fa-users text-white"></i>
+                                <i class="fa-solid fa-cannabis"></i>
                             </div>
                             <div class="ps-4">
-                                <h5>National Instructor</h5>
+                                <h5>Lorem Ipsum Ipsum</h5>
                                 <span>Clita erat ipsum lorem sit sed stet duo justo erat amet</span>
                             </div>
                         </div>
@@ -196,10 +195,10 @@
                     <div class="bg-white shadow d-flex align-items-center h-100 p-4" style="min-height: 150px;">
                         <div class="d-flex">
                             <div class="flex-shrink-0 btn-lg-square bg-primary">
-                                <i class="fa fa-file-alt text-white"></i>
+                                <i class="fa-solid fa-cannabis"></i>
                             </div>
                             <div class="ps-4">
-                                <h5>Get licence</h5>
+                                <h5>Lorem Ipsum Ipsum</h5>
                                 <span>Clita erat ipsum lorem sit sed stet duo justo erat amet</span>
                             </div>
                         </div>
@@ -209,13 +208,16 @@
         </div>
     </div>
     <!-- Facts End -->
+
+    <!-- Div Calculated Start -->
     <main class="container">
-        <iframe src="/static/thong1.mp3" type="audio/mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+        <iframe src="" type="audio/mp3" allow="autoplay" id="audio" style="display:none"></iframe>
         <audio id="audioID" loop>
-            <source src="/static/thong1.mp3" type="audio/mp3">
+            <source src="" type="audio/mp3">
         </audio>
-        <div class="">
+        <div style="margin-left: 35%;">
             <h1>Upload data here</h1>
+            <p id="msg"></p>
         </div>
         <div id="upload" style="margin-top: 3%;" class="row">
             <div class="col-sm-4 mb-3 choose">
@@ -228,18 +230,19 @@
                 </select>
             </div>
             <div class="col-sm-8">
-                <form class="form-cal" action="/do" method="POST" enctype="multipart/form-data">
+                <form class="form-cal" method="POST" action="/do" enctype="multipart/form-data">
                     <div>
                         <div class="input-group mb-3">
                             <input id="fileInput" type="file" class="form-control" name="csv">
                         </div>
                     </div>
-                    <button class="test" type="submit">
+                    <button id="upload" class="test" type="submit">
                         <span></span>
                         <span></span>
                         <span></span>
                         <span></span><i class="fa-solid fa-calculator"></i> Predict
                     </button>
+                    <a href="" class="btn btn-primary">Hướng dẫn upload</a>
                 </form>
             </div>
         </div>
@@ -302,11 +305,14 @@
         <div id="successAlert" class="alert alert-success" role="alert" style="display: none; margin-top: 30px;"></div>
         <div id="errorAlert" role="alert" class="alert alert-danger" style="display: none;"></div>
     </main>
+    <!-- Div Calculated End -->
 
 
+    <div class="res" style="display: none;">
+    </div>
 
     <!-- Team Start -->
-    <div class="container-xxl py-6">
+    <div id="about-us" class="container-xxl py-6">
         <div class="container">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <h6 class="text-primary text-uppercase mb-2">Đội của chúng tôi</h6>
@@ -318,9 +324,9 @@
                         <div class="position-relative">
                             <img style="height: 310px;" class="img-fluid" src="/static/img/thong2.jpg" alt="Nguyen Dinh Duy Thong">
                             <div class="team-social text-center">
-                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square btn-outline-primary border-2 m-1" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-outline-primary border-2 m-1" href="https://twitter.com/?lang=vi"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-outline-primary border-2 m-1" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                         <div class="bg-light text-center p-4">
@@ -334,9 +340,9 @@
                         <div class="position-relative">
                             <img style="height: 310px;" class="img-fluid" src="/static/img/minh.jpg" alt="">
                             <div class="team-social text-center">
-                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square btn-outline-primary border-2 m-1" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-outline-primary border-2 m-1" href="https://twitter.com/?lang=vi"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-outline-primary border-2 m-1" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                         <div class="bg-light text-center p-4">
@@ -350,9 +356,9 @@
                         <div class="position-relative">
                             <img style="height: 310px;" class="img-fluid" src="/static/img/huybeo.jpg" alt="">
                             <div class="team-social text-center">
-                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square btn-outline-primary border-2 m-1" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-outline-primary border-2 m-1" href="https://twitter.com/?lang=vi"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-outline-primary border-2 m-1" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                         <div class="bg-light text-center p-4">
@@ -399,7 +405,7 @@
     <!-- Team End -->
 
     <!-- Footer Start -->
-    <div style="background: rgba(56, 124, 39, 0.8);" class="container-fluid text-light footer my-6 mb-0 py-6 wow fadeIn" data-wow-delay="0.1s">
+    <div id="contact-me" style="background: rgba(56, 124, 39, 0.8);" class="container-fluid text-light footer my-6 mb-0 py-6 wow fadeIn" data-wow-delay="0.1s">
         <div class="container">
             <div class="row g-5" style="justify-content: space-around;">
                 <div class="col-lg-3 col-md-6">
@@ -407,17 +413,15 @@
                     <h2 class="text-primary mb-4"><i class="fa-solid fa-cannabis"></i> JohnCena</h2>
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>94 Ngõ Tự Do, Đồng Tâm, HBT, Hà Nội, Việt Nam</p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+085 556 8587</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>thong.nguyenduy188@facebook.com</p>
-                </div>
-                <!-- <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Quick Links</h4>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
+                    <p style="font-size: 14px;" class="mb-2"><i class="fa fa-envelope me-3"></i>thong.nguyenduy188@facebook.com</p>
                 </div>
                 <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Liên kết nhanh</h4>
+                    <a class="btn btn-link" href="#about-us">Về chúng tôi</a>
+                    <a class="btn btn-link" href="">Liên hệ</a>
+                    <a class="btn btn-link" href="">Các mô hình</a>
+                </div>
+                <!-- <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Popular Links</h4>
                     <a class="btn btn-link" href="">About Us</a>
                     <a class="btn btn-link" href="">Contact Us</a>
@@ -426,14 +430,14 @@
                     <a class="btn btn-link" href="">Support</a>
                 </div> -->
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Newsletter</h4>
+                    <h4 class="text-light mb-4">Đăng kí nhận tin mới</h4>
                     <form action="">
                         <div class="input-group">
                             <input type="text" class="form-control p-3 border-0" placeholder="Your Email Address">
-                            <button class="btn btn-primary">Sign Up</button>
+                            <button class="btn btn-primary">Đăng kí</button>
                         </div>
                     </form>
-                    <h6 class="text-white mt-4 mb-3">Follow Us</h6>
+                    <h6 class="text-white mt-4 mb-3">Theo dõi tôi tại:</h6>
                     <div class="d-flex pt-2">
                         <a class="btn btn-square btn-outline-light me-1" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-square btn-outline-light me-1" href=""><i class="fab fa-facebook-f"></i></a>
@@ -452,12 +456,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a href="#">SugarCane Website</a>, All Right Reserved.
+                    &copy; <a href="#">SugarCane Website</a>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
                     <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
                     Designed By <a href="https://www.facebook.com/thong,nguyenduy188">TNDD</a>
-                    <br>Distributed By: <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
                 </div>
             </div>
         </div>
@@ -481,6 +484,80 @@
 
     <!-- Template Javascript -->
     <script src="/static/js/main.js"></script>
+    <script>
+        // $('#upload').on('click', function() {
+        //     var for_data = new FormData()
+        //     var ins = document.getElementById('fileInput').files.length;
+        //     if (ins == 0) {
+        //         $('#msg').html('<span style="color:red">Select at least one file</span>');
+        //         return;
+        //     }
+        //     for (var x = 0; x < ins; x++) {
+        //         form_data.append("csv[]", document.getElementById('fileInput').files[x]);
+        //     }
+
+        //     $.ajax({
+        //         url: '/do', // point to server-side URL
+        //         dataType: 'json', // what to expect back from server
+        //         cache: false,
+        //         contentType: false,
+        //         processData: false,
+        //         data: form_data,
+        //         type: 'post ',
+        //         success: function(response) { // display success response
+        //             $('#msg').html('');
+        //             $.each(response, function(key, data) {
+        //                 if (key !== 'message') {
+        //                     $('#msg').append(key + ' -> ' + data + '<br/>');
+        //                 } else {
+        //                     $('#msg').append(data + '<br/>');
+        //                 }
+        //             })
+        //         }
+        //     });
+        // })
+
+        // function ren() {
+        //     // var x = document.getElementById("fileInput");
+        //     // consol    e.log(x)
+        //     $.ajax({
+        //             data: {
+        //                 file: $('#fileInput').val()
+        //             },
+        //             url: "/do",
+        //             type: "POST"
+        //         })
+        //         .done(function(data) {
+        //             if (data.error) {
+        //                 $('#errorAlert').text(data.error).show();
+        //                 console.log("sai");
+        //             } else {
+        //                 document.getElementById("rand").style.display = "block";
+        //                 console.log("ok");
+        //             }
+        //         });
+        // }
+
+
+        //     $('form').on('submit', function(event) {
+        //         $.ajax({
+        //                 data: {
+        //                     file: $('#fileInput').val()
+        //                 },
+        //                 url: "/do",
+        //                 type: "POST"
+        //             })
+        //             .done(function(data) {
+        //                 if (data.error) {
+        //                     $('#errorAlert').text(data.error).show();
+        //                 } else {
+        //                     $('#res').text(data.result1).show();
+        //                 }
+        //             });
+        //         event.preventDefault();
+        //     });
+        // });
+    </script>
 </body>
 
 </html>

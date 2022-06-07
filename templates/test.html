@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button type="button" onClick=ren()>Click</button>
+    <div id="rand" style="display: none;">
+        <h1>{{x}}</h1>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        function ren() {
+            console.log("click me");
+            $.ajax({
+                url: "/testne",
+                type: "POST",
+                dataType: "json",
+                success: function(data) {
+                    $(rand).replaceWith(data)
+                }
+            });
+            document.getElementById("rand").style.display = "block";
+        }
+
+
+
+        $(function() {
+            window.setInterval(function() {
+                loadNewDecimal()
+            }, 3000)
+
+            function loadNewDecimal() {
+                $.ajax({
+                    url: "/testne",
+                    type: "POST",
+                    dataType: "json",
+                    success: function(data) {
+                        $(rand).replaceWith(data)
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,6 +1,9 @@
+import glob
 import numpy as np
 import pandas as pd
 import joblib
+import send2trash as s2t
+
 from scipy.signal import savgol_filter
 
 
@@ -52,3 +55,8 @@ def doAll(filename):
     d = {"LR": readLRBrix(Absorbance), "SVR": readSVRBrix(Absorbance), "RF": readRFBrix(Absorbance)}
 
     return d
+
+def deleteAllFile():
+    target = glob.glob("./static/files/*")
+    for x in target:
+        s2t.send2trash(x)

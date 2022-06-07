@@ -1,7 +1,7 @@
-from asyncio import threads
-from concurrent.futures import thread
-import json
+from importlib.metadata import files
 import os
+
+import numpy as np
 import x
 import time
 
@@ -36,32 +36,46 @@ def ToHomePage():
 
 @app.route("/do", methods=['POST'])
 def calculated():
-    if request.method == 'POST':
-        if request.files:
+    if request.files:
 
-            file = request.files["csv"]
+        file = request.files["csv"]
 
-            if file.filename == "":
-                print("csv must have a filename!")
-                return jsonify({'error': 'Missing file!'})
+        if file.filename == "":
+            print("csv must have a filename!")
+            return jsonify({'error': 'Missing file!'})
 
-            if not allowed_file(file.filename):
-                print("That is not allowed")
-                return jsonify({'error': 'That is not a csv file!'})
-            else:
-                ml = int(time.time() * 1000)
-                filename = secure_filename(str(ml) + file.filename)
-                file.save(os.path.join(app.config["CSV_UPLOADS"], filename))
-                print("File Saved")
-                res = x.doAll(filename)
-                res1 = res.get('LR')
-                res2 = res.get('SVR')
-                res3 = res.get('RF')
-                return render_template("result.html",result1 = res1, result2= res2, result3= res3)
+        if not allowed_file(file.filename):
+            print("That is not allowed")
+            return jsonify({'error': 'That is not a csv file!'})
+        else:
+            ml = int(time.time() * 1000)
+            filename = secure_filename(str(ml) + file.filename)
+            file.save(os.path.join(app.config["CSV_UPLOADS"], filename))
+            print("File Saved")
+            res = x.doAll(filename)
+            res1 = res.get('LR')
+            res2 = res.get('SVR')
+            res3 = res.get('RF')
+            return render_template("result.html",result1 = res1, result2= res2, result3= res3)
 
 
+@app.route("/delete",methods=['POST'])
+def deleteAllCSV():
+    x.deleteAllFile()
+    return jsonify({'status': 'OK'})
+
+
+@app.route("/testne", methods=['POST'])
+def updateDCM():
+    random_decimal = np.random.rand()
+    return jsonify('',render_template('test_add.html',x=random_decimal))
+
+@app.route('/xxx')
+def xxx():
+    random_decimal = np.random.rand()
+    return render_template('test.html',x=random_decimal)
 
 if __name__ == "__main__":
-    app.run(port=5000)
+    app.run(port=5000, debug=True)
 
 # serve(app, host='0.0.0.0', port=5006, threads=1)

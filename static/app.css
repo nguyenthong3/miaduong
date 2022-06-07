@@ -1,4 +1,8 @@
 @charset "UTF-8";
+html {
+    scroll-behavior: smooth;
+}
+
 
 /* body {
     background-attachment: fixed;
@@ -10,9 +14,19 @@
 main {
     margin-top: 1%;
     background: rgba(233, 233, 233, 0.6);
-    border: 2px solid;
+    border: 5px solid;
     border-radius: 15px;
     padding: 2%;
+    margin-left: 1%;
+}
+
+#bat-dau {
+    background: rgba(38, 136, 13, 0.7);
+    font-size: 22px;
+}
+
+#bat-dau:hover {
+    background: rgba(59, 227, 17, 0.7);
 }
 
 
@@ -56,13 +70,14 @@ main {
     font-size: 15px;
     overflow: hidden;
     transition: 0.3s;
-    border: 1px solid #13344e;
+    border: 1px solid #0ac34b;
+    border-radius: 12px;
     cursor: pointer;
 }
 
 .test:hover {
     color: white;
-    background: rgba(0, 11, 15, 0.7);
+    background: rgba(23, 207, 93, 0.902);
     transition-delay: 0.7s;
 }
 
@@ -126,123 +141,38 @@ button:hover span:nth-child(4) {
     transition-delay: 0.5s;
 }
 
+#upload .btn {
+    color: white;
+    margin-top: -0.2%;
+    margin-left: 1.2%;
+    font-size: 15px;
+    font-weight: 600;
+    border: 1px solid rgba(23, 207, 93, 0.902);
+    border-radius: 12px;
+    padding: 15px 30px;
+    background: rgba(23, 207, 93, 0.902);
+}
+
+#upload .btn:hover {
+    z-index: 22;
+    color: white;
+    background: rgba(10, 255, 104, 0.902);
+    ;
+    border: 1px solid rgba(0, 0, 0, 0.602);
+    padding: 17px 32px;
+}
+
 
 /* Kết Thúc Nút Predict */
 
-
-/* tr,
-td {
-    border: 1px solid;
+#about-us span {
+    font-weight: 600;
 }
 
-th {
-    border: 1px solid;
-    text-align: center;
-} */
-
-
-/* Gioi thieu */
-
-
-/* 
-#gioi-thieu {
-    justify-content: space-around;
-    display: flex;
-    margin-top: 3%;
+#header-carousel a:nth-child(even) {
+    background: rgba(38, 136, 13, 0.7);
 }
 
-#gioi-thieu>div {
-    background: rgba(255, 255, 255, 0.3);
-    margin: 10px;
-    padding: 10px;
-    border: 2px solid;
-    border-radius: 15px;
+#header-carousel a:nth-child(even):hover {
+    background-color: rgba(65, 202, 31, 0.7);
 }
-
-.carousel-inner .h5 {
-    font-weight: 400;
-}
-
-.carousel-inner .p {
-    font-weight: 400;
-}
-
-svg>img {
-    height: 175px;
-}
-
-.card-body>p {
-    font-weight: 500;
-}
-
-.card-body>p:nth-child(3) {
-    padding-bottom: 140px;
-} */
-
-
-/* Footer */
-
-
-/* footer {
-    color: aliceblue;
-    background: rgba(0, 11, 15, 0.7);
-    margin-top: 100%;
-    padding-top: 30px;
-    margin-bottom: 0%;
-} */
-
-
-/* Slide-show */
-
-
-/* 
-#slideshow {
-    overflow: hidden;
-    height: 600px;
-    width: 1300px;
-    margin: 0;
-    margin-left: -10px;
-    margin-top: 15%;
-    border: 3px solid;
-    border-radius: 30px;
-}
-
-.slide-wrapper {
-    width: 7800px;
-    -webkit-animation: slide 15s ease infinite;
-}
-
-.slide {
-    float: left;
-    height: 600px;
-    width: 1300px;
-}
-
-.slide img {
-    width: 1300px;
-    height: 600px;
-}
-
-@-webkit-keyframes slide {
-    20% {
-        margin-left: 0px;
-    }
-    30% {
-        margin-left: -1300px;
-    }
-    50% {
-        margin-left: -1300px;
-    }
-    60% {
-        margin-left: -2600px;
-    }
-    80% {
-        margin-left: -2600px;
-    }
-} */
-
-
-/* End - SlideShow */
-
-
-/* .carousel-indicators .button {} */
