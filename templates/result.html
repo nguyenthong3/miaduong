@@ -13,6 +13,7 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
+    <link href="/static/img/favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,16 +37,55 @@
 
 <body class="preloading">
     <!-- Spinner Start -->
-    <div class="bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 align-items-center justify-content-center" id="load" style="display: flex;">
+    <div class="bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 align-items-center justify-content-center" id="load" style="display: flex; z-index: 100000;">
         <img src="/static/img/1494.gif">
     </div>
     <!-- Spinner End -->
 
-    <div class="res container">
-        <br><br>
-        <div>
-            <h1 style="font-style: italic;">RESULT</h1>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+        <a href="/" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
+            <h2 class="m-0"><i class="fa-solid fa-cannabis"></i> JohnCena</h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div id="my-menu" class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="/" class="nav-item nav-link active">Trang chủ</a>
+                <a href="/homepage#about-us" class="nav-item nav-link">Về chúng tôi</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Các mô hình</a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="" class="dropdown-item">Hồi quy tuyến tính (LR)</a>
+                        <a href="" class="dropdown-item">Support Vector Regression (SVR)</a>
+                        <a href="" class="dropdown-item">Rừng ngẫu nhiên (RF)</a>
+                        <a href="" class="dropdown-item">Mạng Nơ-ron học sâu (DL)</a>
+                    </div>
+                </div>
+                <a href="" class="nav-item nav-link">Khác</a>
+                <a href="/homepage#contact-me" class="nav-item nav-link">Liên hệ</a>
+            </div>
+            <a id="bat-dau" href="/homepage#to-calculated" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Bắt đầu<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-6 my-6 mt-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center">
+            <h1 class="display-4 text-white animated slideInDown mb-4">Kết quả phân tích</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a class="text-white" href="/">Trang chủ</a></li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+    <div class="res container">
         <br><br>
         <table class="table table-dark table-striped">
             <thead>
