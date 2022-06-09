@@ -180,3 +180,68 @@ button:hover span:nth-child(4) {
 #header-carousel a:nth-child(even):hover {
     background-color: rgba(65, 202, 31, 0.7);
 }
+
+
+/* Custom Alert Start */
+
+#dialogoverlay {
+    display: none;
+    opacity: .8;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: #FFF;
+    width: 100%;
+    z-index: 10;
+}
+
+#dialogbox {
+    display: none;
+    position: fixed;
+    background: rgb(226, 212, 212);
+    border-radius: 15px;
+    width: 550px;
+    z-index: 10;
+}
+
+#dialogbox>div {
+    background: #FFF;
+    margin: 8px;
+}
+
+#dialogbox>div>#dialogboxhead {
+    background: rgba(14, 203, 30, 0.5);
+    font-size: 24px;
+    padding: 10px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+
+#dialogbox>div>#dialogboxbody {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+#dialogbox>div>#dialogboxfoot {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    text-align: right;
+}
+
+#dialogbox>div>#dialogboxfoot>button {
+    background: rgba(14, 203, 30, 0.7);
+    border: 0px;
+    border-radius: 15px;
+    font-size: 20px;
+    padding: 5px 15px 5px 15px;
+}
+
+#dialogbox>div>#dialogboxfoot>button:hover {
+    background: rgba(182, 233, 186, 0.7);
+    color: #FFF;
+}
+
+
+/* Custom Alert end */

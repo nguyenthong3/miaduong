@@ -186,6 +186,16 @@
 
     <!-- Div Calculated Start -->
     <main class="container">
+
+        <div id="dialogoverlay"></div>
+        <div id="dialogbox">
+            <div>
+                <div id="dialogboxhead"></div>
+                <div id="dialogboxbody"></div>
+                <div id="dialogboxfoot"></div>
+            </div>
+        </div>
+
         <!-- <iframe src="/static/thong1.mp3" type="audio/mp3" allow="" id="audio" style="display:none"></iframe>
         <audio id="audioID" loop>
             <source src="/static/thong1.mp3" type="audio/mp3">
@@ -501,86 +511,6 @@
     <!-- Template Javascript -->
     <script src="/static/js/main.js "></script>
     <script src="/static/js/index.js"></script>
-    <script>
-        // $(document).ready(function() {
-        //     var a = document.getElementById("off-music").style.display;
-        //     alert(a);
-        // });
-
-
-        // $('#upload').on('click', function() {
-        //     var for_data = new FormData()
-        //     var ins = document.getElementById('fileInput').files.length;
-        //     if (ins == 0) {
-        //         $('#msg').html('<span style="color:red ">Select at least one file</span>');
-        //         return;
-        //     }
-        //     for (var x = 0; x < ins; x++) {
-        //         form_data.append("csv[] ", document.getElementById('fileInput').files[x]);
-        //     }
-
-        //     $.ajax({
-        //         url: '/do', // point to server-side URL
-        //         dataType: 'json', // what to expect back from server
-        //         cache: false,
-        //         contentType: false,
-        //         processData: false,
-        //         data: form_data,
-        //         type: 'post ',
-        //         success: function(response) { // display success response
-        //             $('#msg').html('');
-        //             $.each(response, function(key, data) {
-        //                 if (key !== 'message') {
-        //                     $('#msg').append(key + ' -> ' + data + '<br/>');
-        //                 } else {
-        //                     $('#msg').append(data + '<br/>');
-        //                 }
-        //             })
-        //         }
-        //     });
-        // })
-
-        // function ren() {
-        //     // var x = document.getElementById("fileInput ");
-        //     // consol    e.log(x)
-        //     $.ajax({
-        //             data: {
-        //                 file: $('#fileInput').val()
-        //             },
-        //             url: "/do ",
-        //             type: "POST "
-        //         })
-        //         .done(function(data) {
-        //             if (data.error) {
-        //                 $('#errorAlert').text(data.error).show();
-        //                 console.log("sai ");
-        //             } else {
-        //                 document.getElementById("rand ").style.display = "block ";
-        //                 console.log("ok ");
-        //             }
-        //         });
-        // }
-
-
-        //     $('form').on('submit', function(event) {
-        //         $.ajax({
-        //                 data: {
-        //                     file: $('#fileInput').val()
-        //                 },
-        //                 url: "/do ",
-        //                 type: "POST "
-        //             })
-        //             .done(function(data) {
-        //                 if (data.error) {
-        //                     $('#errorAlert').text(data.error).show();
-        //                 } else {
-        //                     $('#res').text(data.result1).show();
-        //                 }
-        //             });
-        //         event.preventDefault();
-        //     });
-        // });
-    </script>
 </body>
 
 </html>

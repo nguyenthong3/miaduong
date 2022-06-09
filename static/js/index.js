@@ -27,7 +27,7 @@ form.addEventListener('submit', (e) => {
     var form_data = new FormData();
     var ins = document.getElementById("fileInput").files.length;
     if (ins == 0) {
-        alert("File đưa vào không được để trống!");
+        Alert.render('File đưa vào không được để trống!')
     } else {
         var file_name = document.getElementById("fileInput").files[0].name;
         let stack = [];
@@ -45,11 +45,33 @@ form.addEventListener('submit', (e) => {
         }
         if (extension == ".csv") {
             if (getSelectedValue() == "null") {
-                alert("Hãy chọn điều kiện mong muốn!")
+                Alert.render("Hãy chọn điều kiện mong muốn!");
             } else return;
         } else {
-            alert("Not a CSV file!");
+            Alert.render("File đưa vào phải là file .csv !");
         }
     }
     e.preventDefault();
 })
+
+function CustomAlert() {
+    this.render = function(dialog) {
+        var winW = window.innerWidth;
+        var winH = window.innerHeight;
+        var dialogoverlay = document.getElementById('dialogoverlay');
+        var dialogbox = document.getElementById('dialogbox');
+        dialogoverlay.style.display = "block";
+        dialogoverlay.style.height = winH + "px";
+        dialogbox.style.left = (winW / 2) - (550 * .5) + "px";
+        dialogbox.style.top = "30%";
+        dialogbox.style.display = "block";
+        document.getElementById('dialogboxhead').innerHTML = "Lỗi!";
+        document.getElementById('dialogboxbody').innerHTML = dialog;
+        document.getElementById('dialogboxfoot').innerHTML = '<button onclick="Alert.ok()">Exit</button>';
+    }
+    this.ok = function() {
+        document.getElementById('dialogbox').style.display = "none";
+        document.getElementById('dialogoverlay').style.display = "none";
+    }
+}
+var Alert = new CustomAlert();
