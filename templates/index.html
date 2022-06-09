@@ -186,10 +186,10 @@
 
     <!-- Div Calculated Start -->
     <main class="container">
-        <iframe src="/static/thong1.mp3" type="audio/mp3" allow="" id="audio" style="display:none"></iframe>
+        <!-- <iframe src="/static/thong1.mp3" type="audio/mp3" allow="" id="audio" style="display:none"></iframe>
         <audio id="audioID" loop>
             <source src="/static/thong1.mp3" type="audio/mp3">
-        </audio>
+        </audio> -->
         <div style="margin-left: 35%;">
             <h1>Upload data here</h1>
             <p id="msg"></p>
@@ -197,7 +197,7 @@
         <div id="upload" style="margin-top: 3%;" class="row">
             <div class="col-sm-4 mb-3 choose">
                 <select class="form-select" id="selectedValueNe" onchange="getSelectedValue()">
-                    <option selected>Chọn điều kiện... </option>
+                    <option id="null" selected>Chọn điều kiện... </option>
                     <option id="doam" value="humidity">Độ Ẩm</option>
                     <option id="nguongoc" value="source">Nguồn Gốc</option>
                     <option id="brix" value="brix">Brix</option>
@@ -500,37 +500,8 @@
 
     <!-- Template Javascript -->
     <script src="/static/js/main.js "></script>
+    <script src="/static/js/index.js"></script>
     <script>
-        var music = document.getElementById('am-nhac');
-        music.addEventListener('click', function() {
-            var x = document.getElementById('off-music').style.display;
-            if (x == 'none') {
-                document.getElementById("on-music").style.display = 'none';
-                document.getElementById("off-music").style.display = 'inline-block';
-                $('#audio').attr('src', '');
-                console.log(document.getElementById("doam").selected);
-            } else {
-                document.getElementById("on-music").style.display = 'inline-block';
-                document.getElementById("off-music").style.display = 'none';
-                $('#audio').attr('src', './static/thong1.mp3');
-            }
-        }, false);
-
-        const myModal = document.getElementById('myModal')
-        const myInput = document.getElementById('myInput')
-
-        myModal.addEventListener('shown.bs.modal', () => {
-            myInput.focus()
-        })
-
-        function getSelectedValue() {
-            var a = document.getElementById("selectedValueNe");
-            var selectedValue = a.options[a.selectedIndex].id;
-            document.getElementById("form-cal").action = "/do/" + selectedValue
-            var req = document.getElementById("form-cal").action
-            console.log(req)
-        }
-
         // $(document).ready(function() {
         //     var a = document.getElementById("off-music").style.display;
         //     alert(a);
