@@ -196,15 +196,15 @@
         </div>
         <div id="upload" style="margin-top: 3%;" class="row">
             <div class="col-sm-4 mb-3 choose">
-                <select class="form-select" id="inputGroupSelect01">
+                <select class="form-select" id="selectedValueNe" onchange="getSelectedValue()">
                     <option selected>Chọn điều kiện... </option>
-                    <option value="1">Độ Ẩm</option>
-                    <option value="2">Nguồn Gốc</option>
-                    <option value="3">Brix</option>
+                    <option id="doam" value="humidity">Độ Ẩm</option>
+                    <option id="nguongoc" value="source">Nguồn Gốc</option>
+                    <option id="brix" value="brix">Brix</option>
                 </select>
             </div>
-            <div class="col-sm-8">
-                <form class="form-cal" method="POST" action="/do" enctype="multipart/form-data">
+            <div class="col-sm-8" style="display: inline-block;">
+                <form id="form-cal" class="form-cal" method="POST" action="/do" enctype="multipart/form-data">
                     <div>
                         <div class="input-group mb-3">
                             <input id="fileInput" type="file" class="form-control" name="csv">
@@ -326,8 +326,8 @@
         <div id="errorAlert" role="alert" class="alert alert-danger" style="display: none;"></div>
     </main>
     <!-- Div Calculated End -->
-
-    <div class="res" style="display: none;">
+    <div id="res" style="margin-top: 10%;margin-bottom: -10%;">
+        {% block content %}{% endblock %}
     </div>
 
     <!-- Team Start -->
@@ -508,7 +508,7 @@
                 document.getElementById("on-music").style.display = 'none';
                 document.getElementById("off-music").style.display = 'inline-block';
                 $('#audio').attr('src', '');
-
+                console.log(document.getElementById("doam").selected);
             } else {
                 document.getElementById("on-music").style.display = 'inline-block';
                 document.getElementById("off-music").style.display = 'none';
@@ -522,6 +522,14 @@
         myModal.addEventListener('shown.bs.modal', () => {
             myInput.focus()
         })
+
+        function getSelectedValue() {
+            var a = document.getElementById("selectedValueNe");
+            var selectedValue = a.options[a.selectedIndex].id;
+            document.getElementById("form-cal").action = "/do/" + selectedValue
+            var req = document.getElementById("form-cal").action
+            console.log(req)
+        }
 
         // $(document).ready(function() {
         //     var a = document.getElementById("off-music").style.display;

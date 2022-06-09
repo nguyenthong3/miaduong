@@ -1,0 +1,33 @@
+{% extends "index.html" %} {% block title %}Result{% endblock %} {% block content %}
+<div class="res container">
+    <br><br>
+    <table class="table table-dark table-striped" style="border: 1px solid; border-radius: 10px;">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Mô Hình</th>
+                <th scope="col">Kết quả</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>LR</td>
+                <td>{{result1}}</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>SVR</td>
+                <td>{{result2}}</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>RF</td>
+                <td>{{result3}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <canvas id="line" width="388" height="194" style="display: block; width: 388px; height: 194px;" class="chartjs-render-monitor"></canvas>
+</div>
+
+{% endblock %}

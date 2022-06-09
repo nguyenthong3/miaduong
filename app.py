@@ -33,8 +33,9 @@ def ToHomePage():
     return render_template("index.html")
 
 
-@app.route("/do", methods=['POST'])
-def calculated():
+@app.route("/do/<criteria>", methods=['POST'])
+def calculated(criteria):
+
     if request.files:
 
         file = request.files["csv"]
@@ -51,7 +52,7 @@ def calculated():
             filename = secure_filename(str(ml) + file.filename)
             file.save(os.path.join(app.config["CSV_UPLOADS"], filename))
             print("File Saved")
-            res = x.doAll(filename)
+            res = x.doAll(filename,criteria)
             res1 = res.get('LR')
             res2 = res.get('SVR')
             res3 = res.get('RF')
@@ -75,6 +76,6 @@ def xxx():
     return render_template('test.html',x=random_decimal)
 
 if __name__ == "__main__":
-    app.run(port=5000)
+    app.run(port=5000,debug=True)
 
 # serve(app, host='0.0.0.0', port=5006, threads=1)

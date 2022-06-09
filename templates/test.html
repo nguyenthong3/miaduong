@@ -14,9 +14,27 @@
         <h1>{{x}}</h1>
     </div>
 
+    <div class="col-sm-4 mb-3 choose">
+        <select class="form-select" id="inputGroupSelect01" onchange="tselected()">
+            <option selected>Chọn điều kiện... </option>
+            <option id="doam" value="humidity">Độ Ẩm</option>
+            <option id="nguongoc" value="source">Nguồn Gốc</option>
+            <option id="brix" value="brix">Brix</option>
+        </select>
+        <input type="text" id="txtvalue" />
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <script>
+        function tselected() {
+            var d = document.getElementById("inputGroupSelect01");
+            var displaytext = d.options[d.selectedIndex].text;
+            document.getElementById("txtvalue").value = displaytext;
+            console.log(d)
+            console.log(displaytext)
+        }
+
         function ren() {
             console.log("click me");
             $.ajax({

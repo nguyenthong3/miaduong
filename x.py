@@ -35,7 +35,7 @@ def readXXX():
     return 1
 
 
-def doAll(filename):
+def doAll(filename,criteria):
     """**Principal Component Analysis**"""
 
     data_demo = pd.read_csv("./static/files/"+filename)
@@ -49,8 +49,13 @@ def doAll(filename):
     one = np.ones_like(228, )
     Absorbance = (Absorbance - one * data_mean) / data_std
 
-    d = {"LR": readLRBrix(Absorbance), "SVR": readSVRBrix(Absorbance), "RF": readRFBrix(Absorbance)}
-
+    if criteria == "brix":
+        d = {"LR": readLRBrix(Absorbance), "SVR": readSVRBrix(Absorbance), "RF": readRFBrix(Absorbance)}
+    if criteria == "doam":
+        d = {"LR": 1, "SVR": 2, "RF": 3}
+    if criteria == "nguongoc":
+        d = {"LR": 4, "SVR": 5, "RF": 6}
+    
     return d
 
 def deleteAllFile():
