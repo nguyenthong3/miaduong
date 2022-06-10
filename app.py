@@ -1,8 +1,10 @@
+import datetime
 from importlib.metadata import files
 import os
+from flask_sqlalchemy import SQLAlchemy
 
 import numpy as np
-import x
+import appdo
 import time
 
 from flask import Flask, render_template, redirect, request, url_for, jsonify
@@ -12,9 +14,31 @@ from werkzeug.utils import secure_filename
 app = Flask(__name__)
 api = Api(app)
 
+app.config['SQLALCHEMY_DATABASE_URI'] = ''
 app.config["CSV_UPLOADS"] = 'static/files'
 app.config["ALOWED_EXSTENSION"] = ["CSV"]
 
+
+db=SQLAlchemy(app)
+
+class Models(db.Model):
+    id=db.column(db.Integer, primary_key=True)
+    name=db.column(db.String,)
+    result = db.relationship('Result',backref="models")
+
+    def __repr__(self) -> str:
+        return 'name>>>{self.name}'
+
+class StoreFile(db.Model):
+    id=db.column(db.Integer, primary_key=True)
+    filename=db.collumn(db.String(30))
+    id_result=db.column(db.Integer)
+
+class Result(db.Model):
+    id=db.column(db.Integer, primary_key=True)
+    created_at=db.column(db.DateTime, default=datetime.now())
+    id_model=db.column(db.Integer,db.Foreignkey('Models.id'))
+    predict_result=db.column(db.Float)
 
 def allowed_file(filename):
     if not "." in filename:
@@ -52,7 +76,7 @@ def calculated(criteria):
             filename = secure_filename(str(ml) + file.filename)
             file.save(os.path.join(app.config["CSV_UPLOADS"], filename))
             print("File Saved")
-            res = x.doAll(filename,criteria)
+            res = appdo.doAll(filename,criteria)
             res1 = res.get('LR')
             res2 = res.get('SVR')
             res3 = res.get('RF')
@@ -61,7 +85,7 @@ def calculated(criteria):
 
 @app.route("/deletebb$Xs*B}Zr2Y6cX",methods=['POST'])
 def deleteAllCSV():
-    x.deleteAllFile()
+    appdo.deleteAllFile()
     return jsonify({'status': 'OK'})
 
 
