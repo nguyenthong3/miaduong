@@ -50,8 +50,15 @@
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
-        <a href="/" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
-            <h2 class="m-0"><i class="fa-solid fa-cannabis"></i> JohnCena</h2>
+        <a href="/" class="navbar-brand d-flex align-items-center px-4" style="width: 25%;">
+            <div class="m-0" style="align-items: center; display: inline-flex; justify-content: space-between;">
+                <div class="col-sm-2"><img src="/static/img/HUST_logo.svg.png" width="70%" height="70%"></div>
+                <div class="col-sm-10" style="text-align: center; margin-top: 5%; align-items: center;">
+                    <h3>Đại học Bách Khoa Hà Nội</h3>
+                    <p style="font-size: 70%; font-weight: normal;">Viện Công nghệ Sinh học & Công nghệ Thực Phẩm</p>
+                </div>
+
+            </div>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -59,7 +66,7 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div id="my-menu" class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="/" class="nav-item nav-link active">Trang chủ</a>
-                <a href="#about-us" class="nav-item nav-link">Về chúng tôi</a>
+                <a href="" class="nav-item nav-link">Mô tả đề tài</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Các mô hình</a>
                     <div class="dropdown-menu bg-light m-0">
@@ -69,6 +76,7 @@
                         <a href="" class="dropdown-item">Mạng Nơ-ron học sâu (DL)</a>
                     </div>
                 </div>
+                <a href="#about-us" class="nav-item nav-link">Về chúng tôi</a>
                 <a href="" class="nav-item nav-link">Khác</a>
                 <a href="#contact-me" class="nav-item nav-link">Liên hệ</a>
             </div>
@@ -144,10 +152,10 @@
                     <div class="bg-white shadow d-flex align-items-center h-100 p-4" style="min-height: 150px;">
                         <div class="d-flex">
                             <div class="flex-shrink-0 btn-lg-square bg-primary">
-                                <i class="fa-solid fa-cannabis"></i>
+                                <i class="fa-solid fa-robot"></i>
                             </div>
                             <div class="ps-4">
-                                <h5>Lorem Ipsum Ipsum</h5>
+                                <h5>Học Máy: Machine Learning</h5>
                                 <span>Clita erat ipsum lorem sit sed stet duo justo erat amet</span>
                             </div>
                         </div>
@@ -157,10 +165,10 @@
                     <div class="bg-white shadow d-flex align-items-center h-100 p-4" style="min-height: 150px;">
                         <div class="d-flex">
                             <div class="flex-shrink-0 btn-lg-square bg-primary">
-                                <i class="fa-solid fa-cannabis"></i>
+                                <i class="fa-solid fa-cubes-stacked"></i>
                             </div>
                             <div class="ps-4">
-                                <h5>Lorem Ipsum Ipsum</h5>
+                                <h5>Về Mía Đường</h5>
                                 <span>Clita erat ipsum lorem sit sed stet duo justo erat amet</span>
                             </div>
                         </div>
@@ -170,10 +178,10 @@
                     <div class="bg-white shadow d-flex align-items-center h-100 p-4" style="min-height: 150px;">
                         <div class="d-flex">
                             <div class="flex-shrink-0 btn-lg-square bg-primary">
-                                <i class="fa-solid fa-cannabis"></i>
+                                <i class="fa-solid fa-building-columns"></i>
                             </div>
                             <div class="ps-4">
-                                <h5>Lorem Ipsum Ipsum</h5>
+                                <h5>Đại học Bách Khoa Hà Nội</h5>
                                 <span>Clita erat ipsum lorem sit sed stet duo justo erat amet</span>
                             </div>
                         </div>
@@ -200,9 +208,8 @@
         <audio id="audioID" loop>
             <source src="/static/thong1.mp3" type="audio/mp3">
         </audio> -->
-        <div style="margin-left: 35%;">
-            <h1>Upload data here</h1>
-            <p id="msg"></p>
+        <div>
+            <h1 style="text-align: center;">Upload dữ liệu thu thập tại đây</h1>
         </div>
         <div id="upload" style="margin-top: 3%;" class="row">
             <div class="col-sm-4 mb-3 choose">
@@ -220,13 +227,13 @@
                             <input id="fileInput" type="file" class="form-control" name="csv">
                         </div>
                     </div>
-                    <button id="upload" class="test" type="submit">
+                    <button id="upload" class="test" type="submit" aria-label="Tiến hành dự đoán">
                         <span></span>
                         <span></span>
                         <span></span>
                         <span></span><i class="fa-solid fa-calculator"></i> Predict
                     </button>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Hướng dẫn upload</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="font-weight: 550;">Hướng dẫn upload</button>
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-lg modal-dialog-scrollable">
                             <div class="modal-content">
@@ -446,9 +453,9 @@
             <div class="row g-5 " style="justify-content: space-around; ">
                 <div class="col-lg-3 col-md-6 ">
                     <h4 class="text-white mb-4 ">Solomon Nguyen DDuy</h4>
-                    <h2 class="text-primary mb-4 "><i class="fa-solid fa-cannabis "></i> JohnCena</h2>
+                    <h2 class="text-primary mb-4 "><i class="fa-solid fa-cannabis "></i> SOLOMON</h2>
                     <p class="mb-2 "><i class="fa fa-map-marker-alt me-3 "></i>94 Ngõ Tự Do, Đồng Tâm, HBT, Hà Nội, Việt Nam</p>
-                    <p class="mb-2 "><i class="fa fa-phone-alt me-3 "></i>+085 556 8587</p>
+                    <p class="mb-2 "><i class="fa fa-phone-alt me-3 "></i>+84 855 568 587</p>
                     <p style="font-size: 14px; " class="mb-2 "><i class="fa fa-envelope me-3 "></i>thong.nguyenduy188@facebook.com</p>
                 </div>
                 <div class="col-lg-3 col-md-6 ">
@@ -467,10 +474,10 @@
                     </form>
                     <h6 class="text-white mt-4 mb-3 ">Theo dõi tôi tại:</h6>
                     <div class="d-flex pt-2 ">
-                        <a class="btn btn-square btn-outline-light me-1 " href=" "><i class="fab fa-twitter "></i></a>
-                        <a class="btn btn-square btn-outline-light me-1 " href=" "><i class="fab fa-facebook-f "></i></a>
-                        <a class="btn btn-square btn-outline-light me-1 " href=" "><i class="fab fa-youtube "></i></a>
-                        <a class="btn btn-square btn-outline-light me-0 " href=" "><i class="fab fa-linkedin-in "></i></a>
+                        <a class="btn btn-square btn-outline-light me-1 " href=" " aria-label="Theo dõi tôi trên Twitter"><i class="fab fa-twitter "></i></a>
+                        <a class="btn btn-square btn-outline-light me-1 " href=" " aria-label="Theo dõi tôi trên Facebook"><i class="fab fa-facebook-f "></i></a>
+                        <a class="btn btn-square btn-outline-light me-1 " href=" " aria-label="Theo dõi tôi trên Youtube"><i class="fab fa-youtube "></i></a>
+                        <a class="btn btn-square btn-outline-light me-0 " href=" " aria-label="Theo dõi tôi trên LinkedIn"><i class="fab fa-linkedin-in "></i></a>
                     </div>
                 </div>
             </div>
@@ -487,7 +494,7 @@
                     &copy; <a href="# ">SugarCane Website</a>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
-                    Designed By <a href="https://www.facebook.com/thong,nguyenduy188 ">TNDD</a>
+                    Designed By <a href="https://www.facebook.com/thong,nguyenduy188 ">SOLOMON</a>
                 </div>
             </div>
         </div>
@@ -496,7 +503,7 @@
 
 
     <!-- Back to Top -->
-    <a href="# " class="btn btn-lg btn-primary btn-lg-square back-to-top "><i class="bi bi-arrow-up "></i></a>
+    <a href="# " class="btn btn-lg btn-primary btn-lg-square backtop" aria-label="Trở về đầu trang"><i class="bi bi-arrow-up "></i></a>
 
     <!-- JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous "></script>
