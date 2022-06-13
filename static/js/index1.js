@@ -9,7 +9,7 @@ music.addEventListener('click', function() {
     } else {
         document.getElementById("on-music").style.display = 'inline-block';
         document.getElementById("off-music").style.display = 'none';
-        $('#audio').attr('src', './static/thong1.mp3');
+        $('#audio').attr('src', './static/spongebob-trap-remix-krusty-krab.mp3');
     }
 }, false);
 
@@ -54,13 +54,6 @@ form.addEventListener('submit', (e) => {
                 default:
                     return;
             }
-
-            // if (getSelectedValue() == "null") {
-            //     Alert.render("Hãy chọn điều kiện mong muốn!");
-            // }
-            // if (getSelectedValue() == "doam") {
-            //     Alert.render("Xin Lỗi! Độ ẩm hiện tại chưa đủ dữ liệu")
-            // } else return;
         } else {
             Alert.render("File đưa vào phải là file .csv !");
         }
