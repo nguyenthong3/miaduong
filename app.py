@@ -76,11 +76,53 @@ def calculated(criteria):
             filename = secure_filename(str(ml) + file.filename)
             file.save(os.path.join(app.config["CSV_UPLOADS"], filename))
             print("File Saved")
+            if criteria == "brix":
+                res = appdo.doAll(filename,criteria)
+                lr = "Linear Regression"
+                svr = "Support Vector Regression"
+                rf = "Random Forest"
+                res1 = res.get('LR')
+                res2 = res.get('SVR')
+                res3 = res.get('RF')
+                return render_template("result.html",criteria = "Kết quả phân tích bằng tiêu chí Brix",name1 = lr,name2 = svr, name3 = rf , result1 = res1, result2= res2, result3= res3)
+            if criteria == "nguongoc":
+                ldaName = "Linear Discriminant Analysis"
+                svrName = "Support Vector Regression"
+                rfName = "Random Forest"
+                res = appdo.doAll(filename,criteria)
+                lda = res.get('LDA')
+                svr = res.get('SVR')
+                rf = res.get('RF')
+                return render_template("result.html",criteria = "Kết quả truy xuất Nguồn gốc",name1 = ldaName,name2 = svrName, name3 = rfName,result1 = lda, result2 = svr, result3 = rf)
+            if criteria == "doam":
+                res = appdo.doAll(filename,criteria)
+                lda = res.get('LDA')
+                svr = res.get('SVR')
+                rf = res.get('RF')
+                return render_template("result.html",criteria = "Kết quả phân tích bằng tiêu chí Độ ẩm",result1 = lda, result2 = svr, result3 = rf)
+
+
+@app.route("/dotest/<criteria>",methods=['POST'])
+def dotest(criteria):
+    if request.files:
+
+        file = request.files["csv"]
+
+        if file.filename == "":
+            print("csv must have a filename!")
+            return jsonify({'error': 'Missing file!'})
+
+        if not allowed_file(file.filename):
+            print("That is not allowed")
+            return jsonify({'error': 'That is not a csv file!'})
+        else:
+            ml = int(time.time() * 1000)
+            filename = secure_filename(str(ml) + file.filename)
+            file.save(os.path.join(app.config["CSV_UPLOADS"], filename))
+            print("File Saved")
             res = appdo.doAll(filename,criteria)
-            res1 = res.get('LR')
-            res2 = res.get('SVR')
-            res3 = res.get('RF')
-            return render_template("result.html",result1 = res1, result2= res2, result3= res3)
+            return res
+
 
 
 @app.route("/deletebb$Xs*B}Zr2Y6cX",methods=['POST'])
