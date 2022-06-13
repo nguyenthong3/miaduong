@@ -44,9 +44,22 @@ form.addEventListener('submit', (e) => {
             extension += stack.pop();
         }
         if (extension == ".csv") {
-            if (getSelectedValue() == "null") {
-                Alert.render("Hãy chọn điều kiện mong muốn!");
-            } else return;
+            switch (getSelectedValue()) {
+                case "null":
+                    Alert.render("Hãy chọn điều kiện mong muốn!");
+                    break;
+                case "doam":
+                    Alert.render("Xin Lỗi! Độ ẩm hiện tại chưa đủ dữ liệu")
+                    break;
+                default:
+                    return;
+            }
+            // if (getSelectedValue() == "null") {
+            //     Alert.render("Hãy chọn điều kiện mong muốn!");
+            // }
+            // if (getSelectedValue() == "doam") {
+            //     Alert.render("Xin Lỗi! Độ ẩm hiện tại chưa đủ dữ liệu")
+            // } else return;
         } else {
             Alert.render("File đưa vào phải là file .csv !");
         }

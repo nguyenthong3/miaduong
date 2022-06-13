@@ -87,13 +87,13 @@ def calculated(criteria):
                 return render_template("result.html",criteria = "Kết quả phân tích bằng tiêu chí Brix",name1 = lr,name2 = svr, name3 = rf , result1 = res1, result2= res2, result3= res3)
             if criteria == "nguongoc":
                 ldaName = "Linear Discriminant Analysis"
-                svrName = "Support Vector Regression"
+                svmName = "Support Vector Machine"
                 rfName = "Random Forest"
                 res = appdo.doAll(filename,criteria)
                 lda = res.get('LDA')
-                svr = res.get('SVR')
+                svr = res.get('SVM')
                 rf = res.get('RF')
-                return render_template("result.html",criteria = "Kết quả truy xuất Nguồn gốc",name1 = ldaName,name2 = svrName, name3 = rfName,result1 = lda, result2 = svr, result3 = rf)
+                return render_template("result.html",criteria = "Kết quả truy xuất Nguồn gốc",name1 = ldaName,name2 = svmName, name3 = rfName,result1 = lda, result2 = svr, result3 = rf)
             if criteria == "doam":
                 res = appdo.doAll(filename,criteria)
                 lda = res.get('LDA')
@@ -142,6 +142,6 @@ def xxx():
     return render_template('test.html',x=random_decimal)
 
 if __name__ == "__main__":
-    app.run(port=5000)
+    app.run(port=5000,debug=True)
 
 # serve(app, host='0.0.0.0', port=5006, threads=1)
