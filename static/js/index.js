@@ -54,6 +54,7 @@ form.addEventListener('submit', (e) => {
                 default:
                     return;
             }
+
             // if (getSelectedValue() == "null") {
             //     Alert.render("Hãy chọn điều kiện mong muốn!");
             // }
