@@ -258,9 +258,3 @@ button:hover span:nth-child(4) {
 
 
 /* End Back-to-top button */
-
-.position-relative>img {
-    width: 100%;
-    height: 310px;
-    object-fit: cover;
-}
