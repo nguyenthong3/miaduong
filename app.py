@@ -142,6 +142,6 @@ def xxx():
     return render_template('test.html',x=random_decimal)
 
 if __name__ == "__main__":
-    app.run(port=5000,debug=True)
+    app.run(port=5000)
 
 # serve(app, host='0.0.0.0', port=5006, threads=1)
