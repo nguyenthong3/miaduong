@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solomon's Project</title>
+    <title>Project Đường Mía</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -60,10 +60,10 @@
         <a href="/" class="navbar-brand d-flex align-items-center px-4" style="width: 35%;">
             <!-- <img src="/static/img/logo-11.jpg" width="90%" height="100%"> -->
             <div class="m-0" style="align-items: center; display: inline-flex;">
-                <div class="col-sm-2"><img src="/static/img/HUST_logo.svg.png" width="60%" height="50%"></div>
-                <div class="col-sm-10" style=" margin-top: 5%; margin-right: 2%; align-items: center;">
-                    <h3 style="font-size: 90%;">TRƯỜNG ĐẠI HỌC BÁCH KHOA HÀ NỘI</h3>
-                    <p style="font-size: 60%; font-weight: normal;">VIỆN CÔNG NGHÊ SINH HỌC VÀ CÔNG NGHỆ THỰC PHẨM</p>
+                <div class="col-sm-1"><img src="/static/img/HUST_logo.svg.png" width="100%" height="100%"></div>
+                <div class="col-sm-10" style=" margin-top: 4%; margin-left: 2%; align-items: center;">
+                    <h3 style="font-size: 110%;">TRƯỜNG ĐẠI HỌC BÁCH KHOA HÀ NỘI</h3>
+                    <p style="font-size: 70%; font-weight: normal; margin-left: 1%;">VIỆN CÔNG NGHÊ SINH HỌC VÀ CÔNG NGHỆ THỰC PHẨM</p>
                 </div>
             </div>
         </a>
@@ -73,7 +73,7 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div id="my-menu" class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="/" class="nav-item nav-link active">Trang chủ</a>
-                <a href="" class="nav-item nav-link">Mô tả đề tài</a>
+                <a href="#motadetai" class="nav-item nav-link">Mô tả đề tài</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Các mô hình</a>
                     <div class="dropdown-menu bg-light m-0">
@@ -164,6 +164,7 @@
     </div>
     <!-- Carousel End -->
 
+
     <!-- Facts Start -->
     <div id="to-calculated" class="container-fluid facts py-5 pt-lg-0">
         <div class="container py-5 pt-lg-0">
@@ -222,7 +223,6 @@
                 <div id="dialogboxfoot"></div>
             </div>
         </div>
-
         <iframe src="/static/spongebob-trap-remix-krusty-krab.mp3" type="audio/mp3" allow="" id="audio" style="display:none"></iframe>
         <audio id="audioID" loop>
             <source src="/static/spongebob-trap-remix-krusty-krab.mp3" type="audio/mp3">
@@ -337,6 +337,48 @@
     <div id="res" style="margin-top: 10%;margin-bottom: -10%;">
         {% block content %}{% endblock %}
     </div>
+
+    <!-- Gioi Thieu de tai start -->
+    <div class="container-xxl py-6" id="motadetai">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                    <div class="position-relative overflow-hidden ps-5 pt-5 h-100" style="min-height: 400px;">
+                        <img class="position-relative w-100 h-100" src="/static/img/motadetai.png" alt="" style="object-fit: cover;  border: 1px solid;">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                    <div class="h-100">
+                        <h6 class="text-uppercase mb-2" style="color: rgb(23, 151, 23)">Mô tả đề tài</h6>
+                        <h1 class="display-6 mb-4" style="font-size: 25px;">NGHIÊN CỨU PHÁT TRIỂN PHƯƠNG PHÁP PHÂN TÍCH MỘT SỐ CHỈ TIÊU, TRUY XUẤT NGUỒN GỐC CỦA ĐƯỜNG THÔNG QUA PHỔ HẤP THỤ CẬN HỒNG NGOẠI KẾT HỢP CÁC CÔNG CỤ MACHINE LEARNING</h1>
+                        <p>Trong nghiên cứu này nhóm đã phát triển một số phương pháp phân tích nhanh chỉ tiêu độ ẩm, truy xuất nguồn gốc của đường và nồng độ chất khô của dịch đường thông qua phổ hấp thụ cận hồng ngoại (NIRS). Để dự đoán các thông số hóa
+                            lý từ phổ NIR, nhóm sử dụng công cụ học máy như LR, RFR, SVR, DNN, PCA, Logistic Regression, LDA, SVM.</p>
+                        <p class="mb-4" style="font-size: 20px;"><strong>Tính ưu việt của nghiên cứu này so với các phương pháp phân tích truyền thống thể hiện ở</strong> </p>
+                        <div class="row g-2 mb-4 pb-2">
+                            <div class="col-sm-6">
+                                <i><i class="fa fa-check text-primary me-2"></i>Thời gian phân tích nhanh nhờ sử dụng các công cụ học máy đã được huấn luyện từ trước</i>
+                            </div>
+                            <div class="col-sm-6">
+                                <i><i class="fa fa-check text-primary me-2"></i>Thiết bị đo phổ NIR cầm tay đơn giản, dễ sử dụng, và có khả năng tự động hóa trong truyền dữ liệu</i>
+                            </div>
+                            <div class="col-sm-6">
+                                <i><i class="fa fa-check text-primary me-2"></i>Các dữ liệu dùng để huấn luyện có thể lấy từ thông số hóa lý của các mẫu đường mía tại chính nhà máy</i>
+                            </div>
+                            <div class="col-sm-6">
+                                <i><i class="fa fa-check text-primary me-2"></i>Chí phí thấp do không tiêu tốn cơ sở vật chất phòng trong phân tích hóa lý</i>
+                            </div>
+                        </div>
+                        <div class="row g-4">
+                            <div class="col-sm-6">
+                                <a class="btn btn-primary py-3 px-5" href="" style="background: rgba(38, 136, 13, 0.7);">Liên Hệ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Gioi Thieu De Tai -->
 
     <!-- Team Start -->
     <div id="about-us" class="container-xxl py-6" style="padding-bottom: 0px;">
