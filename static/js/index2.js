@@ -21,7 +21,6 @@ function getSelectedValue() {
 }
 
 const form = document.getElementById('form-cal');
-console.log(form);
 
 form.addEventListener('submit', (e) => {
     var form_data = new FormData();
